@@ -1,0 +1,15 @@
+branches:
+  only:
+  - master
+language: node_js
+node_js:
+- node
+install:
+- npm install
+script: npm test
+notifications:
+  webhooks:
+    urls:
+      secure: b1Q1MotteKpJhwhXShkrqNgnkPtJWe3tTvtwE3I2rdhnlIyDDHsHu6r151SzFpN2CL2CEJ2HDgg89wVBHRlyQX/PriUO8K+2GyyPIwUpsxYMWhdt2w/VxedwLcKxkr+eAB1PvdPPDe92+DJYKjENfFOc9yPlqtSUb9wN9yYn+cEhVAN+QSAG4YQiUrCREM7SHLrbzEzkdzsznN1L1xjNdkUz/mqcYxKtUbbyn8/grw75GKw/UVo6lu77we7Ujxk1elvLHsZynG1zGmmAcmgrQSFyl/v7sINxLfwOwohQyOIQIHtbVBuA+LqTgmG56WetfChR4/pXov65isxClpxRPc2ulY+T4/k+Zkx8kjVRyYYzubS6pnYvvfnGcRKb9n4Y0lKW9Q/RAXZfYsY7Y8dz2vKAfu3+Q2UAl6Zqba1sIq6X0zoYJ0k3P+29MVsJP4XKyjphxbuZgBqrOChN4qz/y6fZt8sD6d/rL0WTL7pSbXk8rJL4Wj8VNUDhrt7sH14J4rG6FJScT5fo4vhTDte6M5PtUmHQ+yhzeHHS/4wJ3Nf5tT+12G7t5xINg1EkG9V2fUg3Bm7QCVzqwitOtEvlmmYidZ0Xd0PjOJ6pgjm7TJCR5KuQIHcVecNi1K6D7vBJZQsOQm9J+qSMbLXJP4lu8b4/3yGSKkyvPtG5+c+q1mM=
+    on_success: always
+    on_failure: always
